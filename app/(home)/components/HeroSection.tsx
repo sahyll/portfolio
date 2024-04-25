@@ -22,7 +22,7 @@ const HeroSection = () => {
           <Link className="group inline-block w-fit" href={"mailto:mohdasahil28@gmail.com"}>
             <Title text="Contact Me 📭" />
           </Link>
-          <a className="group inline-block w-fit" href="../Links/Resume.pdf" download="Resume">
+          <a className="group inline-block w-fit" href="/Resume.pdf" download="Resume">
             <Title text="Resume ⬇️" />
           </a>
         </div>
