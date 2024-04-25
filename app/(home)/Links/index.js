@@ -5,17 +5,17 @@ import { SiPython, SiNodedotjs ,SiPostgresql ,SiMongodb , SiJavascript, SiBootst
 
 const socials = [
   {
-    link:"www.linkedin.com/in/mohdasahil",
+    link:"https://www.linkedin.com/in/mohdasahil",
     label:"linkedin",
     icon:SiLinkedin
   },
   {
-    link:"github.com/sahyll",
+    link:"https://github.com/sahyll",
     label:"github",
     icon: SiGithub
   },
   {
-    link:"www.linkedin.com/in/mohdasahil",
+    link:"https://www.linkedin.com/in/mohdasahil",
     label:"instagram",
     icon: SiInstagram
   }
