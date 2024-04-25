@@ -29,10 +29,10 @@ const Projects = () => {
                 
                 <DirectionAwareHover
                   imageUrl={project.cover}
-                  childrenClassName='bg-slate-800 p-3 rounded-2xl '
+                  childrenClassName='bg-slate-800 p-3 rounded-2xl opacity-75 '
                   className='w-full space-y-5 cursor-pointer '>
                 <div className='space-y-5'>
-                  <h1 className='text-2xl font-bold'> {project.title}</h1>
+                  <h1 className='lg:text-2xl text-sm font-bold'> {project.title}</h1>
                   <div className='flex items-center gap-5'>
                     {project.tech.map((Icon, index)=>{
                       return <Icon className='w-8 h-8' key={index} />

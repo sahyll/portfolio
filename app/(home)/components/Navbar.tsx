@@ -12,7 +12,7 @@ const Navbar = ({className}: {className?:string}) => {
             </span>
         </h1>
         <div className='flex items-center gap-5'>
-
+        +91 9341424326
             
             {socials.map((social, index)=>{
                 const Icon = social.icon;

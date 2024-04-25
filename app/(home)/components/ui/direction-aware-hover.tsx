@@ -108,7 +108,7 @@ export const DirectionAwareHover = ({
               childrenClassName 
             )}
           >
-            <div style={{color:"black"}}>
+            <div >
             {children}
             </div>
           </motion.div>
