@@ -1,0 +1,1 @@
+export { socials, skills } from '../Links/index';
