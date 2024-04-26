@@ -100,7 +100,7 @@ const HeroSection = ({projectRef, skillsRef }: {projectRef?: React.RefObject<HTM
           <Link className="group inline-block w-fit" href="/Resume.pdf" download="Resume">
             <Title text="Resume ⬇️" boxClass1='translate-x-2' width="w-[110px]" />
           </Link>
-          <div className='lg:hidden flex flex-col mr-10 mt-5'>
+          <div className='lg:hidden flex flex-col mt-5'>
           <h1>{"{Sections}"}</h1>
           <div className='flex gap-6 mt-5'>
             <button onClick={handleProjectsClick} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
