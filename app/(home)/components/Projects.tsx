@@ -10,7 +10,7 @@ const Projects = () => {
     <div className='py-10 p-5 sm:p-0'>
       
       <Title 
-          text="Projects 🎨"
+          text="Projects 🎨" boxClass2='translate-x-2' width="w-40"
           className='flex flex-col items-center justify-center rotate-6'
         />
 
@@ -26,7 +26,12 @@ const Projects = () => {
                 style={{ backgroundColor: `${project.background}`} }
               
                 className={`p-5 rounded-md`}>
-                
+                  <div className='p-2 font-semibold mb-3 flex gap-6 lg:hidden'>
+                    {project.title} ||
+                    {project.tech.map((Icon, index)=>{
+                      return <Icon className='w-6 h-6' key={index} />
+                    })}
+                  </div>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   childrenClassName='bg-slate-800 p-3 rounded-2xl opacity-75 '

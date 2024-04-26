@@ -15,7 +15,7 @@ const socials = [
     icon: SiGithub
   },
   {
-    link:"https://www.linkedin.com/in/mohdasahil",
+    link:"https://www.instagram.com/sa.hyll",
     label:"instagram",
     icon: SiInstagram
   }

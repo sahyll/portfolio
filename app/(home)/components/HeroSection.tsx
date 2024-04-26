@@ -12,7 +12,7 @@ const HeroSection = () => {
           Hey there! 👋
           <br />
           <span className='underline underline-offset-8 decoration-red-600'>{"Sahil here"}</span> 
-          <span className='lg:text-5xl text-2xl relative lg:top-[-0.5rem] top-[-0.2rem]'>{ " :)"}</span>
+          <span className='cursor-cell lg:text-5xl text-2xl relative lg:top-[-0.5rem] top-[-0.2rem] hover:text-indigo-600 transition-all'>{ " :)"}</span>
         </h1>
         <p className='md:w-96 text-lg text-gray-300 relative'>
           {"Based in Bangalore, I'm a Fullstack Developer passionate about building modern web applications that users love 🚀"}
@@ -20,11 +20,11 @@ const HeroSection = () => {
 
         <div className='flex flex-col mt-5 lg:mt-0 gap-5 items-center lg:items-start '>
           <Link className="group inline-block w-fit" href={"mailto:mohdasahil28@gmail.com"}>
-            <Title text="Contact Me 📭" />
+            <Title text="Contact Me 📭" boxClass2='translate-x-2' width="w-40" />
           </Link>
-          <a className="group inline-block w-fit" href="/Resume.pdf" download="Resume">
-            <Title text="Resume ⬇️" />
-          </a>
+          <Link className="group inline-block w-fit" href="/Resume.pdf" download="Resume">
+            <Title text="Resume ⬇️" boxClass1='translate-x-2' width="w-[110px]" />
+          </Link>
         </div>
       </div>
 
