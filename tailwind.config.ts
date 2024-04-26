@@ -8,6 +8,7 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
  
 
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -68,6 +69,15 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          }
+        },
+      
         "move-up":{
             from:{
               transform:"translateY(10px)",
@@ -104,6 +114,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "move-up":"move-up 1s linear forwards",
         "move-down":"move-down 1s linear forwards",
+        shimmer: "shimmer 2s linear infinite",
       },
     },
   },

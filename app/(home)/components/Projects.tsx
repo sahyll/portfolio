@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 import { DirectionAwareHover } from './ui/direction-aware-hover'
 import Link from 'next/link'
 
-const Projects = () => {
+const Projects = ({className}: {className?:string}) => {
   return (
     <div className='py-10 p-5 sm:p-0'>
       
