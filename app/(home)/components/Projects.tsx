@@ -26,16 +26,22 @@ const Projects = () => {
                 style={{ backgroundColor: `${project.background}`} }
               
                 className={`p-5 rounded-md`}>
-                  <div className='p-2 font-semibold mb-3 flex gap-6 lg:hidden'>
-                    {project.title} ||
-                    {project.tech.map((Icon, index)=>{
-                      return <Icon className='w-6 h-6' key={index} />
-                    })}
+                  <div className='p-2 font-semibold mb-3 flex gap-3 lg:hidden'>
+                    <div className='flex flex-col gap-2'>
+                      {project.title} {"=>"}
+                      <div className='flex flex-row gap-2'>
+                      {"{"}
+                        {project.tech.map((Icon, index)=>{
+                          return <Icon className='w-6 h-6' key={index} />
+                        })}
+                        {"}"}
+                      </div>
+                    </div>
                   </div>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   childrenClassName='bg-slate-800 p-3 rounded-2xl opacity-75 '
-                  className='w-full space-y-5 cursor-pointer '>
+                  className='w-full space-y-5 cursor-pointer'>
                 <div className='space-y-5'>
                   <h1 className='lg:text-2xl text-sm font-bold'> {project.title}</h1>
                   <div className='flex items-center gap-5'>
