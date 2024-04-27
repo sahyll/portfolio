@@ -42,16 +42,20 @@ const Navbar = ({ className, projectRef, skillsRef }: { className?: string; proj
           </button>
         </div>
       </div>
+      <div className="hidden lg:flex mt-3 ml-8">+91 9341424326</div>
+      <div className='flex flex-col'>
+      
       <div className='flex items-center gap-5 mt-2'>
-        +91 9341424326
         {socials.map((social, index) => {
           const Icon = social.icon;
           return (
             <Link href={social.link} key={index} aria-label={social.label}>
-              <Icon className='w-5 h-5 hover:scale-125 transition-all' />
+              <Icon className='w-5 h-5 ml-2 hover:scale-125 transition-all' />
             </Link>
           );
         })}
+      </div>
+      <div className="mt-2 lg:hidden  overline  decoration-green-500">+91 9341424326</div>
       </div>
     </nav>
   );
